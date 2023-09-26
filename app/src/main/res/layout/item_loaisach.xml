@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/gray"
+    android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_loaisach"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img_loaisach"/>
+    <TextView
+        android:id="@+id/tv_tenloaisach"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mali"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/img_loaisach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_chitiet_ls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Chi tiết"
+            android:fontFamily="@font/mali"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/main"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

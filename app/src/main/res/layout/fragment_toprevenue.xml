@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edL_tuNgay"
+            android:layout_marginBottom="10dp"
+            style="@style/LoginTextInputLayoutStyle"
+            android:fontFamily="@font/mali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_tuNgay"
+                android:hint="Từ ngày"
+                android:inputType="date"
+                android:focusable="false"
+                android:fontFamily="@font/mali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edL_denNgay"
+            android:layout_marginBottom="10dp"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_below="@+id/edL_tuNgay"
+            android:fontFamily="@font/mali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_denNgay"
+                android:hint="Đến ngày"
+                android:focusable="false"
+                android:inputType="date"
+                android:fontFamily="@font/mali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/tv005"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doanh thu: "
+            android:textSize="17sp"
+            android:fontFamily="@font/mali"
+            android:textColor="@color/black"
+            android:layout_below="@id/edL_denNgay"/>
+        <TextView
+            android:id="@+id/doanhThu"
+            android:layout_toRightOf="@id/tv005"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="17sp"
+            android:fontFamily="@font/mali"
+            android:textColor="@color/red"
+            android:layout_below="@id/edL_denNgay"/>
+        <Button
+            android:id="@+id/btn_tinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tính doanh thu"
+            android:textColor="@color/white"
+            android:layout_below="@id/doanhThu"
+            android:fontFamily="@font/mali"
+            android:backgroundTint="@color/main"/>
+    </RelativeLayout>
+
+</RelativeLayout>

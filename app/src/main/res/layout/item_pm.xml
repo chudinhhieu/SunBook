@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/gray"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop= "5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_pm"
+            android:src="@drawable/avatar_pm"
+            android:layout_width="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_height="70dp"/>
+        <TextView
+            android:id="@+id/tv_tenTV_pm"
+            android:text="Chu Đình Hiếu"
+            android:fontFamily="@font/mali"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/img_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_tensach_pm"
+            android:layout_below="@id/tv_tenTV_pm"
+            android:text="Dự án mẫu"
+            android:fontFamily="@font/mali"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/img_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_chitiet_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Chi tiết"
+            android:fontFamily="@font/mali"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/main"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

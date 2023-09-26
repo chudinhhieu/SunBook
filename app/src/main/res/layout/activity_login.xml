@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/sun_book"/>
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:fontFamily="@font/mali"
+        android:textColor="@color/main"
+        android:text="ĐĂNG NHẬP TÀI KHOẢN"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edL_taiKhoan"
+        android:layout_marginTop="20dp"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_taiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mali"
+            android:hint="Tài khoản"
+            android:maxLength="20"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edL_matKhau"
+        android:layout_marginTop="10dp"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_matKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mali"
+            android:inputType="textPassword"
+            android:hint="Mật khẩu"
+            android:textSize="18dp"
+            android:maxLength="20"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhớ tài khoản"
+        android:textSize="18dp"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:fontFamily="@font/mali"
+        android:layout_height="60dp"
+        android:text="ĐĂNG NHẬP"
+        android:backgroundTint="@color/main"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:background="@color/main" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.4"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/mali"
+            android:layout_gravity="center_vertical"
+            android:text="hoặc đăng nhập bằng"
+            android:textColor="@color/xam"
+            android:textSize="16sp" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:background="@color/main" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#3B5998">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/mali"
+            android:text="Đăng nhập bằng Facebook"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/google_custom">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/google"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Đăng nhập bằng Google"
+            android:textSize="16dp"
+            android:fontFamily="@font/mali"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+</LinearLayout>
